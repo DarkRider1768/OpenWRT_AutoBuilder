@@ -3,7 +3,7 @@
 #			OpenWRT Auto-Builder					#
 #			Written by: LostFate					#
 #			Tested on:						#
-#				Debian 7.5					#
+#				Debian 7.5 (LostFate)				#
 #										#
 #################################################################################
 
