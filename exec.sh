@@ -1,16 +1,16 @@
 #################################################################################
-#										#
-#			OpenWRT Auto-Builder					#
-#			Written by: LostFate					#
-#			Tested on:						#
-#				Debian 7.5 (LostFate)				#
-#										#
+#																				#
+#							OpenWRT Auto-Builder								#
+#							Written by: LostFate								#
+#							Tested on:											#
+#							Debian 7.5 (LostFate)								#
+#																				#
 #################################################################################
 
 #!/bin/bash
 #
 #################################################################################
-#				Constants					#
+#				Constants														#
 #################################################################################
 DEBIAN_DEPENDENCIES=(git-core subversion build-essential asciidoc bash bc binutils bzip2 fastjar flex g++ gcc util-linux gawk libgtk2.0-dev intltool zlib1g-dev make genisoimage libncurses5-dev libssl-dev patch perl-modules python2.6-dev rsync ruby sdcc unzip wget gettext xsltproc zlib1g-dev libboost1.49-dev libxml-parser-perl libusb-dev bin86 bcc sharutils openjdk-7-jdk b43-fwcutter icedtea-7-jre-jamvm)
 OPENSUSE_DEPENDENCIES=
@@ -19,7 +19,7 @@ CENTOS_DEPENDENCIES=
 UBUNTU_DEPENDENCIES=
 
 #################################################################################
-#			System Variables					#
+#			System Variables													#
 #################################################################################
 #Flag that indicates whether the script actually does any work or
 #not.
@@ -46,7 +46,7 @@ HAVE_SOURCE=
 OS_DISTRIB=$(lsb_release -a | grep "Distributor ID" | awk '{print $3}')
 
 #################################################################################
-#				User Variables					#
+#				User Variables													#
 #################################################################################
 #Working directory for source files  and the compiler.
 BUILD_DIR="/home/"$USERNAME"/Desktop/build/openwrt/"
@@ -69,7 +69,7 @@ JOB_THREADS=$((SYS_CORES + 1))
 PARALLEL_BUILD=1
 
 #################################################################################
-#                         Functions                              		#
+#                         Functions                              				#
 #################################################################################
 #
 getSYS_CORES()
@@ -204,7 +204,7 @@ checkSOURCE()
 
 
 #################################################################################
-#                         	Main Program                           		#
+#                         	Main Program                           				#
 #################################################################################
 
 if [ "$DEBUG" = "1" ];
